@@ -14,12 +14,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0% 20%;
+  margin: 0% 10%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App{
+    margin: 1rem;
 }
 
 h4{
@@ -36,4 +40,8 @@ h3{
 
 a{
     color: rgb(56,56,56);
+}
+
+.splide__track{
+    margin: 1rem;
 }

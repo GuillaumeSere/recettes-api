@@ -19,7 +19,7 @@ function Veggie() {
         if(check){
             setVeggie(JSON.parse(check));
         }else{
-            const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=10&tags=vegetarian`);
+            const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=20&tags=vegetarian`);
             const data = await api.json();
 
             localStorage.setItem('vegetarian', JSON.stringify(data.recipes));
@@ -32,7 +32,7 @@ function Veggie() {
     <Wrapper>
         <h3>Our Vegetarien Picks</h3>
     <Splide options={{
-        perPage: 2,
+        perPage: 3,
         arrows: false,
         pagination: false,
         drag: 'free',
@@ -60,7 +60,10 @@ function Veggie() {
 
 
 const Wrapper = styled.div`
-    margin: 4rem 0rem;
+     margin: 4rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(3rem, 1fr);
+    gap: 3rem;
 `;
 
 const Card = styled.div`

@@ -27,7 +27,7 @@ function Search() {
 };
 
 const FormStyle = styled.form`
-    margin: 2rem 0 0 0;
+    margin: 2rem auto;
     width: 100%;
     position: relative;
    
