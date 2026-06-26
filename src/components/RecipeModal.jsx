@@ -22,7 +22,7 @@ const getIngredients = (recipe) => {
 const RecipeModal = ({ recipe, onClose }) => {
   const [recipeDetails, setRecipeDetails] = useState(null);
   const [isDetailsLoading, setIsDetailsLoading] = useState(false);
-  const [detailsError, setDetailsError] = useState("");
+  const [detailsError, setDetailsError] = useState("")
 
   useEffect(() => {
     if (!recipe) {
