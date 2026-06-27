@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://recettes-api-60.vercel.app/sitemap.xml
